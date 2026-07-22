@@ -1030,7 +1030,7 @@ a { color: inherit; }
   box-shadow: 0 24px 56px rgba(0,0,0,0.5);
 }
 
-/* project screenshot mock */
+/* project screenshot */
 .project-shot {
   margin: -1.75rem -1.75rem 0;
   height: 180px;
@@ -1057,6 +1057,22 @@ a { color: inherit; }
 
 .project-shot--eeu {
   background: linear-gradient(135deg, #5c1a1a, #0d0d0f);
+}
+
+/* real screenshot image */
+.project-shot-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-shot-img {
+  transform: scale(1.03);
 }
 
 .shot-mock {
